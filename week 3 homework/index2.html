@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman!</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style2.css" />
+    <script src="assets/javascript/game2.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1><strong>Ordo Inquisitorium Hangman Game (Warhammer 40000 Tribute</strong></h1>
+        <img id="title-image" src="assets/images/download.jpg" alt="Hangman Title Image" />
+        <div class="row">
+            <div class="col-md-6 gameplay-column">
+                <img id="youwin-image" src="assets/images/burn.jpg" alt="Winning Image" />
+                <img id="gameover-image" src="assets/images/gameover.png" alt="Game Over Image" />
+                <h2 id="pressKeyTryAgain">Press Any Key to Try Again!</h2>
+                <img id="hangmanImage" src="" alt="" />
+            </div>
+            <div class="col-md-6 gameplay-column">
+                <h2>Press A-Z to Make a Guess!</h2>
+                <h4>Wins</h4>
+                <h5 id="totalWins"></h5>
+                <h4>Current Word</h4>
+                <h3 id="currentWord"></h3>
+                <h4>Guesses Remaining</h4>
+                <h6 id="remainingGuesses"></h6>
+                <h4>Letters Guessed</h4>
+                <h3 id="guessedLetters"></h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        hangmanGame.updateDisplay();
+    </script>
+</body>
+
+</html>
